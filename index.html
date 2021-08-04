@@ -11,13 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="HeaderIcon"><a href="#test"><i class="fas fa-home"></i></a></div>
         <div class="HeaderIcon"><i class="fas fa-hdd"></i></div>
-        <div class="HeaderIcon"><i class="fas fa-gamepad"></i></div>
+        <div class="HeaderIcon"><i class="fas fa-pen"></i></div>
         <div class="HeaderIcon"><i class="fas fa-dice"></i></div>
         <div class="HeaderIcon"><i class="fas fa-eye"></i></div>
     </header>
@@ -28,33 +30,57 @@
         <section id="test" class="two">
             <div class="parent">
                 <div class="div1" id="consoleDiv1">
-                    <img src="assets/console.png" onmouseover="deviceConsole(this)"  >
+                    <img src="images/assets/console.png" onmouseover="deviceConsole(this)"  >
                 </div>
                 <div class="div2">
-                    <img src="assets/control.png" onmouseover="deviceControl(this)"  >
+                    <img src="images/assets/control.png" onmouseover="deviceControl(this)"  >
                 </div>
                 <div class="div3">
-                    <img src="assets/headset.png" onmouseover="deviceHeadset(this)"  >
+                    <img src="images/assets/headset.png" onmouseover="deviceHeadset(this)"  >
                 </div>
                 <div class="div4" id="DeviceBox">
-                    <img src="assets/both.png" id="DeviceBoxImg">
+                    <img src="images/assets/both.png" id="DeviceBoxImg">
                     <h3 id="DeviceBoxTitle">AZURA CONSOLE</h3>
                     <p>Immerse yourself with a controller offering haptic feedback, adaptive triggers and a built-in mic.</p>
                     <a>LEARN MORE</a>
                 </div>
                 <div class="div5" onmouseover="deviceCam(this)"  >
-                    <img src="assets/cam.png">
+                    <img src="images/assets/cam.png">
                 </div>
                 <div class="div6" onmouseover="deviceHolo(this)"  >
-                    <img src="assets/hologram.png">
+                    <img src="images/assets/hologram.png">
                 </div>
                 <div class="div7" onmouseover="deviceVr(this)"  >
-                    <img src="assets/vr.png">
+                    <img src="images/assets/vr.png">
                 </div>
             </div>
         </section>
-        <section class="three">
-            <h1>Third Page</h1>
+        <section  id="test2" class="three">
+            <div class="parent">
+                <div class="div1">
+                    <h3>CUSTOMIZE</h3>
+                    <div class="solidRow">
+                        <div class="solidRow1">
+                            <i onmouseover="changeControl(1)" class="fas fa-circle" style="color: rgb(255, 51, 95);"></i>
+                            <i onmouseover="changeControl(2)" class="fas fa-circle" style="color: rgb(51, 173, 255);"></i>
+                            <i onmouseover="changeControl(3)" class="fas fa-circle" style="color: rgb(255, 167, 51);"></i>
+                            <i onmouseover="changeControl(4)" class="fas fa-circle" style="color: rgb(156, 51, 255);"></i>
+                        </div>
+                        <div class="solidRow2">
+                            <i onmouseover="changeControl(5)" class="fas fa-circle" style="color: transparent; background: url('images/ctrlButtons/1.png');background-repeat: no-repeat;background-size: contain;"></i>
+                            <i onmouseover="changeControl(6)" class="fas fa-circle" style="color: transparent; background: url('images/ctrlButtons/2.png');background-repeat: no-repeat;background-size: contain;"></i>
+                            <i onmouseover="changeControl(7)" class="fas fa-circle" style="color: transparent; background: url('images/ctrlButtons/3.png');background-repeat: no-repeat;background-size: contain;"></i>
+                            <i onmouseover="changeControl(8)" class="fas fa-circle" style="color: transparent; background: url('images/ctrlButtons/4.png');background-repeat: no-repeat;background-size: contain;"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="div2">
+                    <img id="controllerImg" src="images/controller/8.png">
+                </div>
+            </div>
+            <div class="div3">
+                <img src="ctrlWall.png">
+            </div>
         </section>
         <section class="four">
             <h1>Fourth Page</h1>

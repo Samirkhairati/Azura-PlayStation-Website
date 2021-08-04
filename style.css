@@ -6,6 +6,7 @@
 }
 @import url('//fonts.cdnfonts.com/css/elianto');
 @import url('//fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -126,11 +127,11 @@ section {
 }
 .two {
     background: rgb(34,31,40);
-    background: linear-gradient(180deg, rgba(34,31,40,1) 0%, rgba(34,31,40,1) 70%, rgb(35, 33, 66) 100%);
+    background: linear-gradient(180deg, rgba(34,31,40,1) 0%, rgba(34,31,40,1) 40%, rgb(11, 11, 20) 100%);
 
 }
 .three {
-    background-color: rgb(35, 33, 66);
+    background-color: rgb(11, 11, 20) ;
 }
 .four {
     background-color: rgb(255, 180, 40);
@@ -219,14 +220,15 @@ section {
     font-size: 5vh;
     margin-top: -2vh;
     margin-bottom: 3vh;
-    background: -webkit-linear-gradient(rgb(0, 89, 255),rgb(0, 162, 255) );
+    /* background: -webkit-linear-gradient(rgb(0, 89, 255),rgb(0, 162, 255) );
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+    color: rgb(49, 131, 255);
     transition: all .5s;
 }
 .two .parent .div4 p {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 3vh;
 }
 .two .parent .div4 img {
@@ -247,7 +249,7 @@ section {
     font-size: 2.5vh;
     border-radius: 2vh;
     margin-top: 3vh;
-    font-family: 'Algreya Sans',sans-serif;
+    font-family: 'Roboto',sans-serif !important;
     transition: all .5s;
 }
 .two .parent .div4 a:hover {
@@ -262,3 +264,95 @@ section {
 /*Section 3 ( Console )
  -------------------------------------------------------------------------------------------------------------------- */
 
+.three .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.three .div1 { grid-area: 1 / 1 / 3 / 5; }
+.three .div2 { grid-area: 3 / 1 / 9 / 5; }
+    
+.three {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.three .parent {
+    width: 30vw;
+    /* height: 20vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    max-height: 90vh;
+}
+
+.three .parent .div1 {
+    padding-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(20, 20, 20);
+    width: 30vw;
+    height: 40vh;
+    margin-bottom: 3vh;
+    border-radius: 3vw;
+    background-color: rgb(15, 15, 29);
+    box-shadow: 8.41px 8.41px 31px #06060C, -8.41px -8.41px 31px #0A0A12; 
+}
+.three .parent .div2 {
+    /* padding: 1vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(20, 20, 20);
+    width: 30vw;
+    height: 40vh;
+    border-radius: 3vw;
+    background-color: rgb(15, 15, 29);
+    box-shadow: 8.41px 8.41px 31px #06060C, -8.41px -8.41px 31px #0A0A12;    
+}
+.three .parent .div2 img {
+    object-fit: cover;
+    width: 90%;
+    height: 85%;
+    border-radius: 2vw;
+}
+.three .parent .div1 h3 {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: 'Elianto',sans-serif;
+    letter-spacing: 5px;
+    background: -webkit-linear-gradient(rgb(255, 141, 106),rgb(255, 25, 56));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
+    margin-bottom: -10px;
+}
+.three .parent .div1 .solidRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 4vh;
+
+}
+.three .parent .div1 .solidRow i {
+    margin: 1vw;
+    font-size: 3vw;
+    /* background: linear-gradient(160deg, #1b1a1a 0%, #2b2b2b 100%); */
+    box-shadow: 8.41px 8.41px 13px #07070E, -8.41px -8.41px 13px #14152A;
+    border-radius: 50%;
+    transition: all .4s;
+}
+.three .parent .div1 .solidRow i:hover {
+    box-shadow: 0px 0px 0px #07070E, 0px 0px 0px #14152A;
+
+}
+.three .div3 img {
+    max-height: 80vh;
+}

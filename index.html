@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="http://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
-                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -24,28 +27,28 @@
         </section>
         <section id="test" class="two">
             <div class="parent">
-                <div class="div1">
-                    <img src="assets/console.png">
+                <div class="div1" id="consoleDiv1">
+                    <img src="assets/console.png" onmouseover="deviceConsole(this)"  >
                 </div>
                 <div class="div2">
-                    <img src="assets/control.png">
+                    <img src="assets/control.png" onmouseover="deviceControl(this)"  >
                 </div>
                 <div class="div3">
-                    <img src="assets/headset.png">
+                    <img src="assets/headset.png" onmouseover="deviceHeadset(this)"  >
                 </div>
-                <div class="div4">
-                    <img src="assets/cam.png">
-                    <h3>AZURA CONSOLE</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, temporibus sunt, earum voluptatibus corrupti, cum iure deleniti enim perspiciatis delectus iste repellendus deserunt natus aliquid alias accusamus excepturi odio. Amet.</p>
+                <div class="div4" id="DeviceBox">
+                    <img src="assets/both.png" id="DeviceBoxImg">
+                    <h3 id="DeviceBoxTitle">AZURA CONSOLE</h3>
+                    <p>Immerse yourself with a controller offering haptic feedback, adaptive triggers and a built-in mic.</p>
                     <a>LEARN MORE</a>
                 </div>
-                <div class="div5">
+                <div class="div5" onmouseover="deviceCam(this)"  >
                     <img src="assets/cam.png">
                 </div>
-                <div class="div6">
-                    <img src="assets/remote.png">
+                <div class="div6" onmouseover="deviceHolo(this)"  >
+                    <img src="assets/hologram.png">
                 </div>
-                <div class="div7">
+                <div class="div7" onmouseover="deviceVr(this)"  >
                     <img src="assets/vr.png">
                 </div>
             </div>
@@ -57,6 +60,7 @@
             <h1>Fourth Page</h1>
         </section>
     </div>
-    
+    <script src="script.js"></script>
+
 </body>
 </html>

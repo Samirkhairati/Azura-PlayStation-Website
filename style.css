@@ -5,7 +5,7 @@
     src: local('Masque'), url('MASQUE__.woff') format('woff');
 }
 @import url('http://fonts.cdnfonts.com/css/elianto');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +13,9 @@
     font-family: sans-serif;
     color: #fff;
 }
-
+html {
+    scroll-behavior: smooth !important;
+}
 body {
     overflow: overlay;
 
@@ -123,11 +125,12 @@ section {
     letter-spacing: 2vh;
 }
 .two {
-    background-color: rgb(34, 31, 40);
+    background: rgb(34,31,40);
+    background: linear-gradient(180deg, rgba(34,31,40,1) 0%, rgba(34,31,40,1) 70%, rgb(35, 33, 66) 100%);
 
 }
 .three {
-    background-color: rgb(40, 228, 97);
+    background-color: rgb(35, 33, 66);
 }
 .four {
     background-color: rgb(255, 180, 40);
@@ -178,12 +181,14 @@ section {
     border-radius: 50%;
     background: rgb(34, 31, 40);
     background: linear-gradient(-45deg, rgb(34, 31, 40) 0%, rgb(40, 33, 38) 100%);    
-    box-shadow: -2px -7px 10px #312d38, 4px 6px 10px #0d0c0f;
+    box-shadow: -2px -7px 10px #312d38, 4px 6px 10px #0d0c0f, inset 0px 0px 0px #312d38,inset  0px 0px 0px #0d0c0f;
     transition: all .3s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: linear;
 }
 .two .parent div:hover {
-    box-shadow: -2px -2px 5px #312d38, 2px 2px 5px #0d0c0f;
+    /* box-shadow: 0px 0px 0px #312d38, 0px 0px 0px #0d0c0f,inset  -2px -7px 20px #0d0c0f65,inset  4px 6px 20px #0d0c0f33; */
+    background: transparent;
+    box-shadow: none;
     transition: all .3s;
 
 }
@@ -198,19 +203,62 @@ section {
     margin-left: 2vh;
     display: flex;
     flex-direction: column;
-    padding: 3vh;
+    padding: 1vh 3vh;
     text-align: center;
+    transition: all .5s;
+    justify-content: center;
+    align-items: center;
+}
+.two .parent .div4:hover {
+    background: rgb(34, 31, 40);
+    background: linear-gradient(-45deg, rgb(34, 31, 40) 0%, rgb(40, 33, 38) 100%);    
+    box-shadow: -2px -7px 10px #312d38, 4px 6px 10px #0d0c0f;
 }
 .two .parent .div4 h3 {
-    font-family: 'Elianto';
+    font-family: 'Elianto', sans-serif;
     font-size: 5vh;
-    margin-top: -5vh;
-    margin-bottom: 5vh;
+    margin-top: -2vh;
+    margin-bottom: 3vh;
+    background: -webkit-linear-gradient(rgb(0, 89, 255),rgb(0, 162, 255) );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s;
+}
+.two .parent .div4 p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 3vh;
 }
 .two .parent .div4 img {
-    margin-top: -10vh;
+    width: 30vh;
+    height: 30vh;
+    top: -5vh;
+    object-fit: cover;
+    margin-bottom: 5vh;
+}
+.two .parent .div4 a {
+    background: rgb(34, 31, 40);
+    background: linear-gradient(-45deg, rgb(34, 31, 40) 0%, rgb(40, 33, 38) 100%); 
+    box-shadow: -2px -7px 10px #312d38, 4px 6px 10px #0d0c0f;
+    padding: 2vh 5vh 1.7vh 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vh;
+    border-radius: 2vh;
+    margin-top: 3vh;
+    font-family: 'Algreya Sans',sans-serif;
+    transition: all .5s;
+}
+.two .parent .div4 a:hover {
+    box-shadow: -2px -2px 5px #312d38, 2px 2px 5px #0d0c0f;
+
 }
 .two .parent div img {
     max-width: 70%;
     max-height: 70%;
 }
+
+/*Section 3 ( Console )
+ -------------------------------------------------------------------------------------------------------------------- */
+

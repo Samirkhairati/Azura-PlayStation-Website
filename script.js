@@ -35,8 +35,8 @@ function deviceConsole(x) {
     deviceBoxImg.src = "images/assets/cam.png";  
     deviceBoxTitle.innerHTML = "HD CAMERA";
     deviceBoxText.innerHTML = "Record yourself in smooth, sharp, full-HD and use the new player face technology";
-    deviceBoxButton.style.visibility = "visible";
-
+    deviceBoxButton.style.visibility = "hidden";
+    
 } function deviceHeadset(x) {
     deviceBoxImg.src = "images/assets/headset.png";   
     deviceBoxTitle.innerHTML = "WIRELESS HEADSET";
@@ -46,7 +46,7 @@ function deviceConsole(x) {
     deviceBoxImg.src = "images/assets/hologram.png";  
     deviceBoxTitle.innerHTML = "HOLOGRAM"; 
     deviceBoxText.innerHTML = "A device that lets you bring characters and objects from games to life"; 
-    deviceBoxButton.style.visibility = "visible";
+    deviceBoxButton.style.visibility = "hidden";
 
 } function deviceVr(x) {
     deviceBoxImg.src = "images/assets/vr.png";

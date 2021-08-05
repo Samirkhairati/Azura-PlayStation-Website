@@ -138,11 +138,13 @@ section {
 } */
 .one {
     background-color: rgb(36, 36, 36);
-    background: url("./img.png");
+    background: url("images/assets/home.png");
     background-size: cover;
+    display: flex;
+    position: relative;
 }
 .one h1 {
-    font-size: 15vh;
+    font-size: 16vh;
     font-family: 'Elianto', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -152,9 +154,19 @@ section {
     -webkit-text-stroke: 10px transparent;
     color: #232d2d;
     padding:50px;
-    letter-spacing: 2vh;
+    letter-spacing: 3vh;
+    z-index: 1;
+    position: absolute;
+    margin: auto;
 }
-
+#particles-js {
+    
+    position: fixed;
+    z-index: 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
 .two {
     background: rgb(34,31,40);
     background: linear-gradient(180deg, rgba(34,31,40,1) 0%, rgba(34,31,40,1) 50%, rgb(13, 13, 24) 100%);
@@ -166,7 +178,7 @@ section {
 }
 .four {
     background-color: rgb(36, 36, 36);
-    background: url("./4k-gaming-wallpaper-for-pc-1920x1080-ideas-4k-in-2\ \(1\).png");
+    background: url("images/assets/game.png");
     background-size: cover;
 }
 .five {

@@ -1,21 +1,13 @@
 // var backgroundCount = 1;
-// for(var i=0;i<=1;i+=0.1){
-
-// }
-var c = 0;
-while(c<=1){
-    setTimeout(function() {
-        c+=0.1;
-        document.documentElement.style.setProperty('--h', String(c));  
-    }, 100)
-}
-// function  move  () {
-//     document.documentElement.style.setProperty('--h', height.value + 'px');  
-//   } 
-// function changeBackground1() {
-//     setInterval(increaseOpacity, 10) {
-        
+// var c = 0;
+// function increaseOpacity(){
+//     if(c<=1){
+//         c+=0.01;
+//         document.documentElement.style.setProperty('--h', String(c));  
 //     }
+// }
+// function changeBackground1() {
+//     // setInterval(increaseOpacity, 10);
 //     document.getElementById('one').style.background = "url('wallpapers/"+String(backgroundCount)+".jpg')";
 //     backgroundCount++;
 //     if(backgroundCount==8){backgroundCount=1;}

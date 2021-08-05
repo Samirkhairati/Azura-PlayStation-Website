@@ -113,6 +113,7 @@ section {
     justify-content: center;
     scroll-snap-align: end;
     scroll-behavior: smooth;
+    position: relative;
 }
 .container {
     scroll-snap-type: y mandatory;

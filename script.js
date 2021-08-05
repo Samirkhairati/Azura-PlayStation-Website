@@ -1,3 +1,14 @@
+// var backgroundCount = 1;
+// function changeBackground1() {
+//     document.getElementById('one').style.background = "url('wallpapers/"+String(backgroundCount)+".jpg')";
+//     backgroundCount++;
+//     if(backgroundCount==8){backgroundCount=1;}
+// }
+
+// setInterval(changeBackground1, 1000);
+
+
+
 var deviceBoxImg = document.getElementById("DeviceBoxImg")
 var deviceBoxTitle = document.getElementById("DeviceBoxTitle")
 var deviceBoxText = document.getElementById("DeviceBoxText")

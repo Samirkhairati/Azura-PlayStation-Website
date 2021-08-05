@@ -4,6 +4,7 @@
     font-weight: normal;
     src: local('Masque'), url('MASQUE__.woff') format('woff');
 }
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
 @import url('//fonts.cdnfonts.com/css/elianto');
 @import url('//fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -14,11 +15,15 @@
     font-family: sans-serif;
     color: #fff;
 }
+:root {
+    --h: 0;
+}
 html {
     scroll-behavior: smooth !important;
 }
 body {
     overflow: overlay;
+    background-color: #1b1a1a;
 
 }
 header {
@@ -34,9 +39,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    z-index: 10;
     background-color: #212121;
     box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
+    
 }
 header div {
     margin: 2vh;
@@ -44,7 +50,7 @@ header div {
     height: 7vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     border-radius: 50px;
     background: linear-gradient(160deg, #1b1a1a 0%, #2b2b2b 100%);
     box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
@@ -91,6 +97,12 @@ header div:nth-child(5) i {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+header div:nth-child(6) i {
+    background: -webkit-linear-gradient(rgb(255, 136, 25), rgb(255, 81, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* header div:nth-child(1):hover i {
     color: rgb(40, 228, 97);
 } */
@@ -108,10 +120,27 @@ section {
     height: 100vh;
 }
 .one {
+    position: relative;
+    z-index: 1;
+}
+
+.one::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: var(--h); 
+    z-index: -1;
+    background: url("img.png");
+    background-size: cover;
+}
+/* .one {
     background-color: rgb(36, 36, 36);
     background: url("./img.png");
     background-size: cover;
-}
+} */
 .one h1 {
     font-size: 15vh;
     font-family: 'Elianto', sans-serif;
@@ -125,6 +154,7 @@ section {
     padding:50px;
     letter-spacing: 2vh;
 }
+
 .two {
     background: rgb(34,31,40);
     background: linear-gradient(180deg, rgba(34,31,40,1) 0%, rgba(34,31,40,1) 40%, rgb(11, 11, 20) 100%);
@@ -139,6 +169,10 @@ section {
     background-size: cover;
 }
 .five {
+    background-color: rgb(11, 11, 20) ;
+}
+
+.six {
     background-color: rgb(11, 11, 20) ;
 }
 
@@ -234,11 +268,15 @@ section {
 }
 .two .parent .div4 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 3vh;
+    font-size: 0.9em;
+    height: 15%;
+    width: 90%;
+    /* text-transform: uppercase; */
+    margin-top: 5px;
 }
 .two .parent .div4 img {
-    width: 30vh;
-    height: 30vh;
+    width: 50%;
+    height: 40%;
     top: -5vh;
     object-fit: cover;
     margin-bottom: 5vh;
@@ -255,7 +293,8 @@ section {
     border-radius: 2vh;
     margin-top: 3vh;
     font-family: 'Roboto',sans-serif !important;
-    transition: all .5s;
+    transition: box-shadow .5s;
+    visibility: hidden;
 }
 .two .parent .div4 a:hover {
     box-shadow: -2px -2px 5px #312d38, 2px 2px 5px #0d0c0f;
@@ -266,7 +305,7 @@ section {
     max-height: 70%;
 }
 
-/*Section 3 ( Console )
+/*Section 3 ( control )
  -------------------------------------------------------------------------------------------------------------------- */
 
 .three .parent {
@@ -318,7 +357,8 @@ section {
     height: 40vh;
     border-radius: 3vw;
     background-color: rgb(15, 15, 29);
-    box-shadow: 8.41px 8.41px 31px #06060C, -8.41px -8.41px 31px #0A0A12;    
+    box-shadow: 8.41px 8.41px 31px #06060C, -8.41px -8.41px 31px #0A0A12;   
+    pointer-events: none; 
 }
 .three .parent .div2 img {
     object-fit: cover;
@@ -358,8 +398,12 @@ section {
     box-shadow: 0px 0px 0px #07070E, 0px 0px 0px #14152A;
 
 }
+.three .div3 {
+    pointer-events: none;
+}
 .three .div3 img {
     max-height: 80vh;
+    
 }
 
 /*Section 4 ( Games )
@@ -440,10 +484,104 @@ section {
 }
 
 
+/*Section 5 ( face )
+ -------------------------------------------------------------------------------------------------------------------- */
+
+ .five {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     padding: 5vw;
+ }
+ .five div {
+     margin: 20px;
+ }
+ .five .faceVertical {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     max-width: 30vw;
+ }
+ .five .faceVertical h2 {
+     text-align: center;
+     font-size: 2.75vw;
+     font-family: 'Elianto', sans-serif;
+     background: -webkit-linear-gradient(rgb(163, 25, 255), rgb(111, 0, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+     
+ }
+ .five .faceVertical p {
+     opacity: 0.7;
+     font-size: 1.3vw;
+     font-family: 'Georama', sans-serif;
+     letter-spacing: 1px;
+ }
+ .five .faceHorizontal {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .five .faceHorizontal img {
+     width: 50vw;
+ }
 
 
 
+/*Section 6 ( hologram )
+ -------------------------------------------------------------------------------------------------------------------- */
 
+.six .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1vw;
+    grid-row-gap: 1vw;
+    padding: 10px;
+    width: 50vw;
+    height: 70vh;
+}
+.six .parent > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 15px solid rgb(29, 29, 29);
+    box-shadow: -2px -7px 10px #312d38, 4px 6px 10px #0d0c0f, inset 0px 0px 0px #312d38,inset  0px 0px 0px #0d0c0f;
+    
+}
+.six .holoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30vw;
+    padding: 1vw;
 
+}
+.six .holoText h2 {
+    text-align: center;
+    font-size: 2.75vw;
+    font-family: 'Elianto', sans-serif;
+    background: -webkit-linear-gradient(rgb(163, 25, 255), rgb(111, 0, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+}
+.six .holoText p {
+    opacity: 0.7;
+    font-size: 1.3vw;
+    font-family: 'Georama', sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+    
 
 

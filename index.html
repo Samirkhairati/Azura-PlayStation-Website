@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -24,6 +27,7 @@
         <div class="HeaderIcon"><i class="fas fa-pen"></i></div>
         <div class="HeaderIcon"><a href="#four"><i class="fas fa-dice"></a></i></div>
         <div class="HeaderIcon"><i class="fas fa-eye"></i></div>
+        <div class="HeaderIcon"><a href="#six"><i class="fas fa-cube"></i></a></div>
     </header>
     <div class="container">
         <section id="one" class="one">
@@ -43,8 +47,8 @@
                 <div class="div4" id="DeviceBox">
                     <img src="images/assets/both.png" id="DeviceBoxImg">
                     <h3 id="DeviceBoxTitle">AZURA CONSOLE</h3>
-                    <p>Immerse yourself with a controller offering haptic feedback, adaptive triggers and a built-in mic.</p>
-                    <a>LEARN MORE</a>
+                    <p id="DeviceBoxText">Immerse yourself with a controller offering haptic feedback, adaptive triggers and a built-in mic.</p>
+                    <a id="DeviceBoxButton">LEARN MORE</a>
                 </div>
                 <div class="div5" onmouseover="deviceCam(this)"  >
                     <img src="images/assets/cam.png">
@@ -150,8 +154,27 @@
             </div>
         </section>
         <section class="five">
-            <h1>Fifth Page</h1>
+            <div class="faceVertical">
+                <h2>ALL NEW PLAYER CHARACTER FACE TECHNOLOGY</h2>
+                <p>The High Definition Camera Scans and Analyses the face of the user and makes it the face of the in-game player character in great detail for enhanced realism and immersion. Users and game developers have the option to use this feature.</p>
+            </div>
+            <div class="faceHorizontal">
+                <img src="images/assets/playerFace.png">
+            </div>
             
+            
+        </section>
+        <section id="six" class="six">
+            <div class="parent">
+                <div class="div1" style="background: url('images/assets/holo1.jpg');background-size: cover;"></div>
+                <div class="div2" style="background: url('images/assets/holo2.png');background-size: cover;"></div>
+                <div class="div3" style="background: url('images/assets/holo3.png');background-size: cover;"></div>
+                <div class="div4" style="background: url('images/assets/holo4.png');background-size: cover;"></div>
+            </div>
+            <div class="holoText">
+                <h2>HOLGRAPHIC IMAGES</h2>
+                <p>ADLFHASDJKHFASJKDHA SDFKAHSDKFJHASD FHAJKSDFHAS JKDFHASD JKFHA DJKSFHASD JKF</p>
+            </div>
         </section>
     </div>
     <script src="script.js"></script>
